@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap");
+
+.bismillahWrap {
+  display: flex;
+  padding: 8px 8px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 70%;
+  justify-self: center;
+  align-items: center;
+  justify-content: space-around;
+  background: #b4bb72;
+  color: #000;
+  font-family: "Noto Naskh Arabic", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.icon {
+  width: 200;
+  height: 200;
+}
+
+.border {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: fixed;
+  overflow-y: scroll;
+  height: 100%;
+  width: 80%;
+  right: 0;
+  padding: 10px 10px;
+  box-sizing: border-box;
+
+  /* flex-direction: column; */
+  justify-content: flex-end;
+}
+.border::-webkit-scrollbar {
+  width: 1.2rem;
+}
+.border::-webkit-scrollbar-track {
+  background: #f6faf7;
+}
+.border::-webkit-scrollbar-thumb {
+  background: #303e27;
+  border-radius: 100vw;
+  height: 100px;
+  border: 0.25rem solid #f6faf7;
+}
+
+.borders {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* border-bottom: 1px solid #d8cca3; */
+  padding: 10px 10px;
+  box-sizing: border-box;
+  margin: 8px 8px;
+  border-radius: 25px;
+  background: #d8cca3;
+}
+
+.number {
+  background: #d7a86e;
+  color: #361500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  padding: 5px 5px;
+  border-radius: 100%;
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+}
+
+.arabic {
+  font-family: "Noto Naskh Arabic", serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: end;
+}
+.translate {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.theEnd {
+  height: 50px;
+  margin-top: 50px;
+}
+.loading {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  background: #d7a86e;
+}
