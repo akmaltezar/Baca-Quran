@@ -6,10 +6,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [number, setNumber] = useState(0);
-
-  useEffect(() => {
-    console.log(number);
-  });
+console.log(number);
 
   return (
     <>
@@ -17,7 +14,7 @@ function App() {
       <div>
         <Sidebar
           setNumber={(res) => {
-            console.log(res);
+            setNumber(res);
           }}
         />
         <Main number={number} />
