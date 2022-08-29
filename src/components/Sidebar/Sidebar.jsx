@@ -5,7 +5,6 @@ import { useEffect } from "react";
 
 function Sidebar({ setNumber }) {
   const [surahs, setSurahs] = useState([]);
-  const [nomor, setNomor] = useState(0);
 
   function getQuran() {
     fetch("https://quran-endpoint.vercel.app/quran", {
@@ -14,10 +13,7 @@ function Sidebar({ setNumber }) {
     })
       .then((response) => response.json())
       .then((result) => {
-        result.data.map((item, index) => {
-          setNomor(item[index]);
-        });
-        console.log(result.data);
+        console.log('data',result.data);
         setSurahs(result.data);
       })
 
@@ -36,8 +32,7 @@ function Sidebar({ setNumber }) {
             className="wrappers"
             key={index}
             onClick={() => {
-              setNumber(nomor);
-              console.log(nomor);
+              setNumber(element.number);
             }}
           >
             <div className="number">

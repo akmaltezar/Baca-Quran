@@ -24,7 +24,7 @@ const Main = ({ number }) => {
 
   useEffect(() => {
     getSurah();
-  }, []);
+  }, [number]);
 
   return (
     <div className="border">
