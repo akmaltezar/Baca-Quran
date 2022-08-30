@@ -1,9 +1,10 @@
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 10px 10px;
-  height: 55px;
+  box-sizing: border-box;
+  height: 10vh;
   background: #303e27;
   color: #e7eaa8;
 }
@@ -13,36 +14,4 @@ header h2 {
 
 .title {
   display: flex;
-}
-.searchBar {
-  width: 70%;
-  margin-left: 15px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.input {
-  width: 40%;
-  height: 2.4rem;
-  background: #f6faf7;
-  outline: none;
-  border: none;
-  border-radius: 1.625rem;
-  padding: 0 3.5rem 0 1.5rem;
-  font-size: 1rem;
-}
-.input:hover {
-  cursor: auto;
-}
-
-.search {
-  width: 3.5rem;
-  height: 2.8rem;
-  margin-left: -3.5rem;
-  background: none;
-  border: none;
-  outline: none;
-}
-.search:active {
-  opacity: 50%;
 }

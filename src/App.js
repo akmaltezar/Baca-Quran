@@ -6,12 +6,12 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [number, setNumber] = useState(0);
-console.log(number);
+  console.log(number);
 
   return (
     <>
       <Header />
-      <div>
+      <div className="container">
         <Sidebar
           setNumber={(res) => {
             setNumber(res);

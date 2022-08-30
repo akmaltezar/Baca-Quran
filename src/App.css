@@ -9,3 +9,9 @@ body {
   background: #f6faf7;
   font-family: "Quicksand", sans-serif;
 }
+@media screen and (min-width: 360px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}

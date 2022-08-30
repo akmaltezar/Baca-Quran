@@ -13,7 +13,7 @@ function Sidebar({ setNumber }) {
     })
       .then((response) => response.json())
       .then((result) => {
-        console.log('data',result.data);
+        console.log(result.data);
         setSurahs(result.data);
       })
 
@@ -43,8 +43,8 @@ function Sidebar({ setNumber }) {
             </div>
             <div className="typeWrapper">
               <p>{element.type.id}</p>
-              <p> | </p>
-              <p> {element.ayahCount} </p>
+              <p className="divider"> | </p>
+              <p> {element.ayahCount} ayat </p>
             </div>
           </div>
         );

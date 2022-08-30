@@ -11,15 +11,6 @@ const Header = () => {
         <GiBookmarklet size="2rem" />
         <h2>Quran</h2>
       </div>
-
-      {/* <div className="searchBar">
-        <input className="input" placeholder="Cari surah..." />
-        <button className="search">
-          <FiSearch size="1.4rem" color="#D7A86E" />
-        </button>
-      </div> */}
-
-      <h2 className="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</h2>
     </header>
   );
 };
