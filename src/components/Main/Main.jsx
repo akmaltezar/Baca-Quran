@@ -20,7 +20,6 @@ const Main = ({ number }) => {
     })
       .then((response) => response.json())
       .then((result) => {
-        console.log(result);
         setSurah(result.data.ayahs);
         setNameAr(result.data.asma.ar);
         setNameId(result.data.asma.id);
@@ -37,9 +36,9 @@ const Main = ({ number }) => {
 
   return (
     <div className="border">
-      {loading === true ? (
+      {loading ? (
         <div></div>
-      ) : number === 0 || number === 1 || number === 9 ? (
+      ) : number === 1 || number === 9 ? (
         <div className="data">
           <p className="arabic">{nameAr.short}</p>
           <div className="names">
@@ -68,7 +67,7 @@ const Main = ({ number }) => {
           </div>
         </div>
       )}
-      {loading === true ? (
+      {loading ? (
         <div className="loading">
           <GiBookmarklet className="book" />
           <p> Bacalah dengan (menyebut) nama Tuhanmu yang menciptakan </p>

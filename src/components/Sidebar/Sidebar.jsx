@@ -12,10 +12,7 @@ function Sidebar({ setNumber }) {
       redirect: "follow",
     })
       .then((response) => response.json())
-      .then((result) => {
-        console.log(result.data);
-        setSurahs(result.data);
-      })
+      .then((result) => setSurahs(result.data))
 
       .catch((error) => console.log("error", error));
   }
